@@ -14,8 +14,25 @@
   <body>
     <header>
       <!-- le header -->
+      <div class="noirCeur"></div>
+      <div class="menuDrawer">
+        <div class="items1">
+          <img src="img/image.png" alt="photo drawer" />
+          <i id="drawerClose" class="ri-close-line"></i>
+        </div>
+        <div class="items2">
+          <a href="#">Accueil</a>
+          <a href="#">Formations Certifiantes</a>
+          <a href="#">Formations Diplômantes</a>
+          <a href="#">Coachs</a>
+          <a href="#">Événements</a>
+          <a href="#">Blog</a>
+          <a href="#">Bourses</a>
+        </div>
+      </div>
       <div class="topbar">
         <div class="topbar01">
+          <i id="iconDrawer" class="ri-menu-fill"></i>
           <img src="img/image.png" alt="photo header" />
           <nav class="navbar">
             <a href="#">Accueil</a>
@@ -58,16 +75,12 @@
       <!-- section d'accueil du site -->
       <div class="ContainerAccueil">
         <div class="items1">
-          <div>
-            <i class="ri-flashlight-fill"></i>
-
-            <h4>Volkeno vous offre une chance unique !</h4>
-          </div>
+          <h4><i class="ri-flashlight-fill"></i> Volkeno vous offre une chance unique !</h4>
           <h1>Volkeno offre des bourses pour 6 mois de formation Bakeli !</h1>
           <p>
             Nous croyons que le talent ne devrait jamais être limité par des contraintes
-            financières. Bakeli, en <br />
-            partenariat avec Volkeno, offre une bourse exceptionnelle couvrant
+            financières. Bakeli, en partenariat avec Volkeno, offre une bourse exceptionnelle
+            couvrant
             <span class="span01">70% des frais de formation.</span>
           </p>
           <div class="items1Btn">
@@ -94,29 +107,31 @@
       </div>
 
       <!-- section des statistiques -->
-      <div class="containerStats">
-        <div class="items items1">
-          <h1>70%</h1>
-          <p>Frais couverts</p>
+      <section class="sectionStats">
+        <div class="containerStats">
+          <div class="items items1">
+            <h1>70%</h1>
+            <p>Frais couverts</p>
+          </div>
+          <div class="items items2">
+            <h1>150</h1>
+            <p>Bourses disponibles</p>
+          </div>
+          <div class="items items3">
+            <h1>6</h1>
+            <p>Mois de formation</p>
+          </div>
+          <div class="items items4">
+            <h1>+2000</h1>
+            <p>diplômés</p>
+          </div>
         </div>
-        <div class="items items2">
-          <h1>150</h1>
-          <p>Bourses disponibles</p>
-        </div>
-        <div class="items items3">
-          <h1>6</h1>
-          <p>Mois de formation</p>
-        </div>
-        <div class="items items4">
-          <h1>+2000</h1>
-          <p>diplômés</p>
-        </div>
-      </div>
+      </section>
       <!-- section de presentation des formations -->
       <section class="sectionformation">
         <h3>+2000 Étudiants formés</h3>
         <h1>Formez-vous aux métiers de demain !</h1>
-        <p style="font-size: 1rem">
+        <p style="font-size: 1rem; text-align: center">
           Améliorez vos compétences dans le domaine de vos rêves en suivant l'un de nos programmes
           de formation.
         </p>
@@ -306,6 +321,8 @@
         </div>
         <button>Voir plus</button>
       </section>
+
+      <!-- section témoignages -->
       <section class="sectionTemoignages">
         <h1>Nos Bakelistes témoignent</h1>
         <div class="items">
@@ -333,19 +350,6 @@
             <div>
               <h3>Mountaga Leye DIOP</h3>
               <img src="img/photo23.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item">
-            <p>
-              (...) Telle est mon histoire, comme celle de beaucoup d'autres. Bakeli ne se contente
-              pas de nous former, elle nous accompagne au-delà des quatre murs du bâtiment, de la
-              lumière de notre écran, jusqu'à dans notre vie de tous les jours. Suis fière d'être
-              une Bakeliste et j'emporterai ce nom avec moi.
-            </p>
-            <hr />
-            <div>
-              <h3>Sharon OKE</h3>
-              <img src="img/photo22.jpg" alt="photo profile" />
             </div>
           </div>
         </div>
@@ -397,8 +401,8 @@
         </div>
         <div class="itemhr"></div>
         <p class="copyright">© Copyright 2025, Tous droits réservés.</p>
-        <i id="iconWhats" class="ri-whatsapp-line"></i>
       </footer>
+      <i id="iconWhats" class="ri-whatsapp-line"></i>
     </main>
   </body>
 </html>

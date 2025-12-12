@@ -3,10 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.8rem;
   font-size: 62.5%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+html {
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -767,7 +773,7 @@ body {
 .menuDrawer {
   box-shadow: inset 1px 1px 10px #a3a8b0;
   width: 480px;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -814,7 +820,7 @@ body {
 
 .noirCeur {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
@@ -867,8 +873,10 @@ body {
   }
 
   .items2 .items2Photo {
-    height: 700px;
-    width: 600px;
+    height: auto;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .containerStats {
@@ -968,7 +976,7 @@ body {
   }
 
   .items2 .items2Photo {
-    width: 430px;
+    width: 90%;
     height: 500px;
     transform: translateX(-20px);
   }
@@ -989,6 +997,11 @@ body {
   .footer .items1 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer .items1 .item4 input {
+    width: 100%;
+    max-width: 450px;
   }
 }
 
@@ -1018,9 +1031,11 @@ body {
   }
 
   .items2 .items2Photo {
-    width: 430px;
-    height: 500px;
-    transform: translateX(-10px);
+    width: 95%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    transform: none;
   }
 
   .sectionTemoignages .items {
@@ -1034,8 +1049,10 @@ body {
     font-size: 1.5rem;
   }
   .sectionTemoignages .items .item {
-    width: 500px;
+    width: 90%;
+    max-width: 400px;
   }
+
   .sectionChiffres .items div {
     width: 300px;
     align-items: start;
@@ -1061,7 +1078,7 @@ body {
     width: 100%;
   }
   .items2 .items2Photo {
-    width: 400px;
+    width: 95%;
     height: 450px;
     transform: translateX(-25px);
   }
@@ -1109,7 +1126,8 @@ body {
   }
 
   .sectionTemoignages .items {
-    width: 500px;
+    width: 100%;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
